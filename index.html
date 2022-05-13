@@ -1,0 +1,32 @@
+<!DOCTYPE html5>
+<html lang="de">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Fenced Frames Test</title>
+    </head>
+    <body>
+        <main>
+            <h1> Trying Fenced Frames </h1>
+
+            <p> IFrame: </p> <br>
+            <iframe
+                    width=840
+                    height=420
+                    src="https://youtube.com/embed/LDU_Txk06tM"
+                    style="border: 0"
+                    allowfullscreen>
+                <!-- IFrames are insecure -->
+            </iframe> 
+
+            <hr>
+            <p> FencedFrame: </p> <br>
+            <fencedframe
+                    width=1020
+                    height=560
+                    mode="opaque-ads"
+                    src="http://localhost:4000/crab">
+            <!-- Fenced Frames are secure? -->
+            </fencedframe>
+        </main>
+    </body>
+</html>
